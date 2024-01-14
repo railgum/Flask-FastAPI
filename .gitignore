@@ -1,4 +1,5 @@
 */.idea/
+.idea
 lesson_*/lection/
 lesson_*/sem/
 __pycache__/
