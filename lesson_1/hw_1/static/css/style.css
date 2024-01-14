@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 640px;
+  background-color: lightgrey;
+}
+
+.header {
+  max-height: 50px;
+  background-color: white;
+}
+
+.header img,
+.social,
+.afo,
+.clr {
+  display: none;
+}
+
+.header p {
+  margin: 5px auto;
+  color: orange;
+  font-family: Lobster;
+  font-size: 30px;
+  text-align: center;
+}
+
+.aside {
+  min-height: 100px;
+  background-color: lightblue;
+}
+
+.aside ul li {
+  /* clear: both; */
+  /*position: relative;*/
+  /*width: 100%;*/
+  height: 35px;
+  font: 12px "Prosto one";
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.aside>ul>li:hover {
+  background-color: aqua;
+}
+
+.aside>ul>li>ul>li {
+  display: none;
+}
+
+.side h3,
+.side h4,
+.short,
+.product {
+  font-family: "Prosto one";
+  margin: 5px 10px;
+}
+
+.long {
+  font: 14px Roboto;
+  margin: 5px 10px;
+}
+
+.white_block {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(188, 188, 188);
+  background-image: -moz-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  box-shadow: inset 0px 2px 1px 0px rgba(255, 255, 255, 0.58);
+  width: 214px;
+  height: 267px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.white_block span {
+  font-size: 25px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: left;
+}
+
+.white_block img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(241, 241, 241);
+  background-color: rgb(115, 115, 115);
+  opacity: 0.79;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.6), inset 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+  width: 202px;
+  height: 175px;
+  margin-left: 5px;
+}
+
+.many {
+  color: red;
+}
+
+.add {
+  border-radius: 3px;
+  background-image: -moz-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
+  background-image: -ms-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
+  box-shadow: 0px 2px 3px 0px rgba(223, 81, 40, 0.48), inset 0px 1px 0px 0px rgba(251, 96, 51, 0.53);
+  width: 109px;
+  height: 28px;
+  margin: 40px 0 10px 10px;
+  font: 14pt Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+.form_1 {
+  height: 50%;
+  margin: 10px auto;
+}
+
+.form_2 {
+  background-color: lightpink;
+  height: 30%;
+  margin: 10px auto;
+}
+
+.form_1 p {
+  margin: 10px 30px;
+  font: 12px Comfortaa;
+}
+
+table {
+  border-collapse: collapse;
+  clear: left;
+  margin: 30px auto;
+  height: 85px;
+}
+
+td {
+  border: 2px solid green;
+  color: #F65121;
+  text-align: center;
+}
+
+th {
+  border: 2px solid green;
+  background: #C6EAAC;
+  color: black;
+}
+
+.foto {
+  margin: 10px 0 10px 50px;
+}
+
+.short {
+  overflow: hidden;
+  margin: 1px 1px 1px 1px;
+}
+
+.wow {
+  font: 30px Lobster;
+  text-align: center;
+  margin-top: 20px;
+  color: orange;
+}
+
+.footer {
+  clear: both;
+  background-color: rgb(99, 99, 99);
+  box-shadow: inset 0px 5px 9px 0px rgba(0, 0, 0, 0.08);
+  padding-top: 10px;
+}
+
+.footer div {
+  margin: 0 auto;
+}
+
+.footer h4,
+.footer p {
+  display: block;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: left;
+  margin: 5px 10px;
+}
+
+.footer>div>p>a {
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+}
+
+.footer input[type="search"] {
+  margin-left: 30px;
+}
