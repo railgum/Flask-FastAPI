@@ -1,1 +1,11 @@
-*/.idea
+*/.idea/
+lesson_*/lection/
+lesson_*/sem/
+__pycache__/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
