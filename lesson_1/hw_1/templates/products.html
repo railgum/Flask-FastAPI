@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}
+    Порося
+{% endblock %}
+{% block content %}
+<div class="side">
+    <ol class="breadcrumb">
+        <li><a href="../catalog.html">Каталог</a></li>
+        <li class="active">Свинка Пеппа</li>
+    </ol>
+    <div class="foto">
+        <a href="https://yadi.sk/i/avr3hNJ733jFq7" target=_blank><img src="../img/pig.jpg"
+                                                                      alt="Порося" width="300"
+                                                                      title="РТИ"></a>
+    </div>
+    <div class="short">
+        <h1>Свинка Пеппа</h1>
+        <p>Отличное настроение</p>
+
+        <input class="add" type="submit" name="many" value="В корзину">
+        <span class="many">1500 &#8381;</span>
+    </div>
+    <div class="product">
+        <h3>Характеристика продукта</h3>
+        <table>
+            <caption>Технические характеристики</caption>
+            <tr>
+                <th>Материал</th>
+                <th>Твердость</th>
+                <th>Вязкость</th>
+            </tr>
+            <tr>
+                <td>TTS-498</td>
+                <td>58</td>
+                <td>18.9</td>
+            </tr>
+            <tr>
+                <td>LnTY-78</td>
+                <td>65</td>
+                <td>16.4</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Подробнее о товаре</h3>
+    <p class="long">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reiciendis,
+        tempora aperiam quae eius aspernatur cum eligendi vel sit deleniti, consequuntur assumenda
+        repudiandae nihil, soluta harum possimus eos ipsa. Rerum!</p>
+</div>
+{% endblock %}
