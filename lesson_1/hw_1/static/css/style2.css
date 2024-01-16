@@ -104,28 +104,38 @@ li {
   /* margin-top: 50px; */
 }
 .side {
-  width: 100%;
-  margin: 50px auto;
-  font-family: "Prosto one";
+    margin: 50px auto;
+    font-family: "Prosto one";
 }
-
+.side_cat {
+  /*width: 100%;*/
+  margin: 100px auto;
+  font-family: "Prosto one";
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+.side_prod {
+    margin: 100px auto;
+}
 .side .last {
   margin-right: 0;
 }
 
 .adress {
-  width: 90%;
+  /*width: 90%;*/
   font-family: Comfortaa;
-  margin: 0 auto;
+  margin: 100px auto;
 }
-
+/*
 .side h3,
 .side h4,
 .short,
 .product {
   margin: 10px 20px;
 }
-
+*/
 .gambino {
   background-image: url(../../static/img/tub.png);
   background-repeat: no-repeat;
@@ -144,7 +154,7 @@ li {
   text-align: center;
   /* z-index: 0; */
 }
-.product {
+.product_main {
   display: flex;
   gap: 100px;
   justify-content: center;
@@ -186,7 +196,6 @@ li {
   height: 175px;
   margin-left: 5px;
 }
-
 .add {
   border-radius: 3px;
   background-image: -moz-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
@@ -199,9 +208,14 @@ li {
   font: 14pt Arial, Helvetica, sans-serif;
   text-align: center;
 }
-
+.feedback {
+    margin: 100px auto;
+}
 fieldset {
   border: none;
+}
+fieldset p {
+    margin-bottom: 20px;
 }
 
 .form_1 {
@@ -218,7 +232,8 @@ fieldset {
   background-color: lightpink;
   width: 90%;
   height: 30%;
-  margin: 10px auto;
+  margin: 30px auto;
+  padding: 20px;
 }
 
 .form_1 p {
@@ -274,10 +289,10 @@ th {
   height: 300px;
 }
 
-.product {
+/*.product {
   clear: both;
   margin: 20px auto;
-}
+}*/
 
 .wow {
   font: 30px Lobster;
@@ -290,7 +305,7 @@ th {
   margin-top: 100px;
   vertical-align: middle;
   height: 135px;
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   justify-content: center;
 }

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    Обратная связь
+{% endblock %}
+{% block content %}
+    <div class="feedback _container">
+        <div class="form_1">
+        <h2>Напишите нам:</h2><br>
+        <form>
+          <fieldset>
+            <p><input placeholder="Ваше Имя?" size="40"></p>
+            <p><input type="email" placeholder="Ваш Email?" size="40"></p>
+            <p><input placeholder="Тема Вашего вопроса?" size="40"></p>
+            <p><textarea cols="50" rows="10" placeholder="Введите Ваш вопрос:"></textarea></p>
+            <p><input type="submit" value="Отправить"></p>
+          </fieldset>
+        </form>
+    </div>
+      <div class="form_2">
+        <form>
+          <fieldset class="form_2__radio">
+            <p>Нам бы хотелось узнать Ваше мнение о предлагаемых товарах:</p>
+            <p><input type="radio" name="1"> Неплохо, я бы купил<br>
+              <input type="radio" name="2"> Мне этого не надо<br>
+              <input type="radio" name="3"> Лучше бы делом занялись</p>
+            <p><input type="submit" value="Отправить"></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+{% endblock %}
