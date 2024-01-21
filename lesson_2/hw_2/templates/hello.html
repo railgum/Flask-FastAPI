@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+    <img src="{{ url_for('static', filename='img/namaste.jpg') }}">
+    <br>
+    <h2>Привет, {{ username }}</h2>
+    <br>
+    <a href="{{ url_for('logout') }}">Выйти</a>
+{% endblock %}
