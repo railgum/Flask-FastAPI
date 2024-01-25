@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block ref %}
+<!--    <div class="wrapper">-->
+<!--        <div class="content">-->
+<!--            <table>-->
+<!--                <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Book</th>-->
+<!--                        <th>Author</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                    {% for book in books %}-->
+<!--                        <tr>-->
+<!--                            <td>{{ book.name }}</td>-->
+<!--                            <td>{% for author in authors %}-->
+<!--                                    {% if book.author_id == author.id %}-->
+<!--                                    {{ author.firstname }} {{ author.lastname }}-->
+<!--                                    {% endif %}-->
+<!--                                {% endfor %}-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                    {% endfor %}-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    {% for book in books %}
+        <p>
+            Book: {{ book.name }}
+            {% for author in authors %}
+                {% if book.author_id == author.id %}
+                    Author: {{ author.firstname }} {{ author.lastname }}
+                {% endif %}
+            {% endfor %}
+            <br>
+        </p>
+    {% endfor %}
+{% endblock %}
