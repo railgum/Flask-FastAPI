@@ -17,11 +17,14 @@ csrf = CSRFProtect(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reg_DB.db'
 db.init_app(app)
 
+
 @app.cli.command('init-db')
 def init_db():
     db.create_all()
     print('OK')
 
+
+@app.cli.command('fill-user')
 @app.route('/register/', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
@@ -31,8 +34,14 @@ def register():
         lastname = form.lastname.data
         email = form.email.data
         password = form.password.data
-        print(firstname, lastname, email, password)
+        # print(firstname, lastname, email, password)
+        print(form.data)
+        # new_user = User(form.data)
+        new_user = User(firstname, lastname, email, password)
+        db.session.add(new_user)
+        db.session.commit()
     return render_template('register.html', form=form)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
