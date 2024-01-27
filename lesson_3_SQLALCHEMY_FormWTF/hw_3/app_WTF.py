@@ -24,16 +24,15 @@ def init_db():
     print('OK')
 
 
-@app.cli.command('fill-user')
 @app.route('/register/', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
     if request.method == 'POST' and form.validate():
         # Обработка данных из формы
-        firstname = form.firstname.data
-        lastname = form.lastname.data
-        email = form.email.data
-        password = form.password.data
+        firstname = request.form['firstname']
+        lastname = request.form['lastname']
+        email = request.form['email']
+        password = request.form['password']
         # print(firstname, lastname, email, password)
         print(form.data)
         # new_user = User(form.data)
