@@ -76,9 +76,9 @@ async def add_movie(movie: Movie):
 async def change_movie(movie_id: int, movie: Movie):
     for i, _ in enumerate(movies):
         if _.id == movie_id:
-            movies[i] = _
+            movies[i] = movie
             logger.info('Отработал PUT запрос')
-            return _
+            return movie
     return HTTPException(status_code=404, detail='Movie not found')
 
 
